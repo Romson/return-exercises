@@ -60,8 +60,8 @@ function factorial(num) {
 }
   factorial(5);
 
-  //Replace kebab-to_Snake_case
-  function kebabToSnake(str) {
+//Replace kebab-to_Snake_case
+function kebabToSnake(str) {
     var myString = str.replace(/-/g, "_");
     return myString;
 }
