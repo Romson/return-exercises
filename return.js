@@ -6,15 +6,25 @@ isEven(20);
 
 //isEven if/else
 function isEven(num) {
-    if(num % 2 != 0) {
-        return false;
-    } else {
+    if(num % 2 === 0) {
         return true;
+    } else {
+        return false;
     }
 }
 isEven(20);
 
-//Factorial (for loop)
+//Factorial (for loop i++)
+function factorial(num) {
+	var result = 1;    
+	for (i = 2; i <= num; i++) {
+        result *= i;
+    }
+    return result; 
+}
+factorial(5);
+
+//Factorial (for loop i--)
 function factorial(num) {
     if (num === 0 || num === 1)
         return 1;
